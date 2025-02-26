@@ -61,7 +61,7 @@ main {
     }
     
     .product-card:hover {
-        transform: translateY(-5px); /* Moves card up smoothly */
+        transform: translateY(-10px) scale(1.03); /* Moves card up smoothly */
         box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Adds a hover shadow effect */
     }
     
