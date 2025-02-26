@@ -3,42 +3,42 @@
         "id": 1,
         "name": "Vegan Burger",
         "price": "$10.00",
-        "img": "product1.jpg",
+        "image": "images/product1.jpg",
         "description": "A delicious plant-based burger made with black beans, quinoa, and spices."
     },
     {
         "id": 2,
         "name": "Vegan Pasta",
         "price": "$15.00",
-        "img": "product2.jpg",
+        "image": "images/product2.jpg",
         "description": "Creamy cashew-based Alfredo sauce over gluten-free pasta, topped with fresh herbs."
     },
     {
         "id": 3,
-        "name": "Vegan Smoothie Bowl",
+        "name": "Vegan Smoothie",
         "price": "$12.00",
-        "img": "product3.jpg",
-        "description": "A refreshing smoothie bowl made with frozen berries, banana, and almond milk."
+        "image": "images/product3.jpg",
+        "description": "A refreshing smoothie made with frozen berries, banana, and almond milk."
     },
     {
         "id": 4,
         "name": "Jackfruit BBQ Sandwich",
         "price": "$13.00",
-        "img": "product4.jpg",
+        "image": "images/product4.jpg",
         "description": "Slow-cooked jackfruit tossed in a tangy BBQ sauce, served on a whole-grain bun."
     },
     {
         "id": 5,
         "name": "Vegan Chili",
         "price": "$12.00",
-        "img": "product5.jpg",
+        "image": "images/product5.jpg",
         "description": "A hearty and spicy chili made with kidney beans, black beans, tomatoes, smoky spices, and seasoned vegan ground beef."
     },
     {
         "id": 6,
         "name": "Vegan Lasagna",
         "price": "$16.00",
-        "img": "product6.jpg",
+        "image": "images/product6.jpg",
         "description": "Layered pasta with cashew ricotta, marinara sauce, and seasoned vegan ground beef."
     }
 ]

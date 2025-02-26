@@ -4,6 +4,8 @@ fetch("products.json")
         const container = document.querySelector(".product-container");
         container.innerHTML = ""; // Clear previous content
 
+        
+
         products.forEach(product => {
             // Format product name into a URL-friendly format
             const productSlug = product.name.toLowerCase().replace(/\s+/g, "-") + "-details";
@@ -23,3 +25,4 @@ fetch("products.json")
         });
     })
     .catch(error => console.error("Error loading products:", error));
+
