@@ -1,21 +1,23 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #1F2937; 
+    background-color: #1F2937;
     color: #F9FAF8;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0; 
 }
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 10px 200px;
+    padding: 50px 400px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .headerlinks {
@@ -28,19 +30,25 @@ body {
     color: #E5E7EB;
 }
 
+.main-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
 .login-container {
-    background: #27364a; 
+    background: #27364a;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 350px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    min-height: 400px; 
+    justify-content: center;
+    min-height: 400px;
 }
 
 form {
@@ -81,33 +89,26 @@ button:hover {
     background-color: #3068c5;
 }
 
-p a {
-    color: #3882F6;
-    text-decoration: none;
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: auto;
 }
 
-p a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) { 
-    body {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 50px;
     }
 
     .login-container {
         width: 90%;
-        max-width: 400px; 
+        max-width: 400px;
         padding: 20px;
-        min-height: 350px; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
+        min-height: 350px;
     }
 
     input, button {
@@ -122,13 +123,4 @@ p a:hover {
     label, p {
         font-size: 14px;
     }
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    color:#F9FAF8;
-    background-color: #1F2937;
-    padding: 20px;
-    font-size: 12px;
 }
