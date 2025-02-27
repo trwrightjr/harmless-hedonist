@@ -1,7 +1,30 @@
-body {
+/* General Page Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.faq-container {
+    flex: 1;
+    max-width: 800px;
+    margin: 120px auto 40px; /* Space to prevent navbar overlap */
+    padding: 50px 200px;
+    background-color: #1F2937;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
 .header {
     display: flex;
     background-color: #1F2937;
@@ -17,16 +40,6 @@ body {
     align-items: center;
     margin-left: auto;
     color: #E5E7EB;
-}
-
-/* FAQ Page Layout */
-.faq-container {
-    max-width: 800px;
-    margin: 120px auto 40px; /* Space to prevent navbar overlap */
-    padding: 50px 200px;
-    background-color: #1F2937;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* FAQ Title */
@@ -65,14 +78,16 @@ body {
 
 /* Footer */
 .footer {
-    display: flex;
-    justify-content: center;
-    color:#F9FAF8;
     background-color: #1F2937;
+    color: #F9FAF8;
+    text-align: center;
     padding: 20px;
+    width: 100%;
+    margin-top: auto;
     font-size: 12px;
 }
 
+/* Headings */
 h1 {
     font-size: 24px;
 }

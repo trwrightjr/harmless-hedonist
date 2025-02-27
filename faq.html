@@ -8,10 +8,14 @@
         <link rel="stylesheet" href="css/faq.css">
     </head>
     <body>
+
+        <!-- Main Wrapper -->
+        <div class="wrapper">
     
-        <!-- Dynamic Header -->
-        <header>
-            <div id="header"></div>
+            <!-- Dynamic Header -->
+            <header>
+                <div id="header"></div>
+            </header>
 
             <script>
                 fetch("header.html")
@@ -40,8 +44,6 @@
                     window.location.reload();
                 }
             </script>
-        </header>
-
     
         <!-- Main Content: FAQ Section -->
         <main class="faq-container">
@@ -76,12 +78,51 @@
                 </p>
         </main>
     
-        <!-- Footer -->
+        <!-- Dynamic Footer -->
         <footer class="footer">
-            <p>Copyright © Harmless Hedonist 2025</p>
+            <div id="footer-content"></div>
         </footer>
-    
+
+        <script>
+            // JavaScript for Dynamic Footer
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("footer.html")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById("footer-content").innerHTML = data;
+                })
+                .catch(error => console.error('There was a problem loading the footer:', error));
+            });
+        </script>
+
+
         <!-- JavaScript for FAQ Interactivity -->
-        <script src="js/faq.js"></script>
+        <script>
+            // Toggle FAQ Answers
+            document.addEventListener("DOMContentLoaded", function() {
+                const faqQuestions = document.querySelectorAll('.faq-question');
+
+                faqQuestions.forEach(question => {
+                    question.addEventListener('click', function() {
+                        const answer = this.nextElementSibling;
+                        const isVisible = answer.style.display === 'block';
+
+                        // Hide all answers first
+                        document.querySelectorAll('.faq-answer').forEach(item => {
+                            item.style.display = 'none';
+                        });
+
+                        // Toggle the clicked question's answer
+                        answer.style.display = isVisible ? 'none' : 'block';
+                    });
+                });
+            });
+        </script>
+
     </body>
     </html>
