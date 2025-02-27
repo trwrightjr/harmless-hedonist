@@ -31,22 +31,14 @@
         "id": 5,
         "name": "Vegan Chili",
         "price": "$12.00",
-<<<<<<< HEAD
-        "img": "product5.jpg",
-=======
         "image": "images/product5.jpg",
->>>>>>> a11e28b8fea476e4aa36fb0194f7c0fab619c4e3
         "description": "A hearty and spicy chili made with kidney beans, black beans, tomatoes, smoky spices, and seasoned vegan ground beef."
     },
     {
         "id": 6,
         "name": "Vegan Lasagna",
         "price": "$16.00",
-<<<<<<< HEAD
-        "img": "product6.jpg",
-=======
         "image": "images/product6.jpg",
->>>>>>> a11e28b8fea476e4aa36fb0194f7c0fab619c4e3
         "description": "Layered pasta with cashew ricotta, marinara sauce, and seasoned vegan ground beef."
     }
 ]
