@@ -1,21 +1,23 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #1F2937; 
+    background-color: #1F2937;
     color: #F9FAF8;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0; 
 }
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1F2937;
     color: #F9FAF8;
     padding: 10px 200px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .headerlinks {
@@ -28,31 +30,27 @@ body {
     color: #E5E7EB;
 }
 
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .signup-container {
-    background: #27364a; 
-    padding: 10px;  
-    border-radius: 7px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background: #27364a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 350px; 
-    margin: auto;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    min-height: 400px; 
+    justify-content: center;
+    min-height: 400px;
 }
-
-h1 {
-    font-size: 15px;
-    margin-bottom: 1px;
-}
-
-p {
-    font-size: 12px;
-    margin-bottom: 1px;
-}
-
 
 form {
     display: flex;
@@ -61,29 +59,36 @@ form {
     align-items: center;
 }
 
+h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
 label {
-    font-size: 12px; 
+    font-size: 14px;
     text-align: left;
     width: 90%;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 input {
     width: 90%;
-    padding: 8px; 
-    font-size: 14px;
-    margin-bottom: 10px; 
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
-
 button {
     background-color: #3882F6;
     color: white;
-    padding: 8px 12px; 
-    font-size: 14px;
+    padding: 10px 15px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -95,18 +100,26 @@ button:hover {
     background-color: #3068c5;
 }
 
-/* Mobile Responsiveness */
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: auto;
+}
+
 @media (max-width: 768px) {
-    body {
-        height: auto;
-        padding: 20px;
+    .header {
+        padding: 10px 50px;
     }
 
     .signup-container {
         width: 90%;
-        max-width: 350px; 
-        padding: 15px;
-        min-height: 340px; 
+        max-width: 400px;
+        padding: 20px;
+        min-height: 350px;
     }
 
     h1 {
@@ -132,4 +145,5 @@ button:hover {
         padding: 10px;
     }
 }
+
 
