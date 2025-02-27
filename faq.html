@@ -100,29 +100,10 @@
             });
         </script>
 
+        <!-- External JavaScript for FAQ Interactivity -->
+        <script src="js/faq.js"></script>
 
-        <!-- JavaScript for FAQ Interactivity -->
-        <script>
-            // Toggle FAQ Answers
-            document.addEventListener("DOMContentLoaded", function() {
-                const faqQuestions = document.querySelectorAll('.faq-question');
-
-                faqQuestions.forEach(question => {
-                    question.addEventListener('click', function() {
-                        const answer = this.nextElementSibling;
-                        const isVisible = answer.style.display === 'block';
-
-                        // Hide all answers first
-                        document.querySelectorAll('.faq-answer').forEach(item => {
-                            item.style.display = 'none';
-                        });
-
-                        // Toggle the clicked question's answer
-                        answer.style.display = isVisible ? 'none' : 'block';
-                    });
-                });
-            });
-        </script>
+    </div>
 
     </body>
     </html>
